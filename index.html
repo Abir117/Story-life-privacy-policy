@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Offline Story Life</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #673ab7;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --accent-color: #512da8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            scroll-behavior: smooth;
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .policy-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: var(--primary-color);
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box {
+            background: #f0ebff;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            word-break: break-all;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: #ffd740;
+            width: 0%;
+            z-index: 1001;
+            transition: width 0.1s;
+        }
+
+        @media (max-width: 600px) {
+            .policy-card {
+                padding: 1.5rem;
+            }
+            header h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header>
+        <h1>Privacy Policy</h1>
+    </header>
+
+    <div class="container">
+        <div class="policy-card">
+            <section id="introduction">
+                <h2>1. Introduction</h2>
+                <p>Welcome to <strong>Offline Story Life</strong>. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our Android application.</p>
+                <p>By using the app, you agree to the collection and use of information in accordance with this policy.</p>
+            </section>
+
+            <section id="collect">
+                <h2>2. Information We Collect</h2>
+                <p>To provide a functional and personalized experience, we may collect:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Name and email address used during registration.</li>
+                    <li><strong>Profile Data:</strong> Profile photo (if you choose to provide one).</li>
+                    <li><strong>Usage Data:</strong> Information on how you interact with the app, including stories read and coin transactions.</li>
+                </ul>
+            </section>
+
+            <section id="use">
+                <h2>3. How We Use Information</h2>
+                <p>We use your data strictly for the following purposes:</p>
+                <ul>
+                    <li>To provide and maintain app features (Story reading, account management).</li>
+                    <li>To manage your virtual coin balance and purchase history.</li>
+                    <li>To improve our service based on usage patterns.</li>
+                    <li><strong>We do not sell your personal information to third parties.</strong></li>
+                </ul>
+            </section>
+
+            <section id="firebase">
+                <h2>4. Firebase Services</h2>
+                <p>Our app is built using Flutter and utilizes Google Firebase to provide core infrastructure. Firebase may collect metadata necessary for its operation, such as device identifiers and crash reports.</p>
+            </section>
+
+            <section id="firestore">
+                <h2>5. Firestore Database</h2>
+                <p>We use Google Cloud Firestore to store your account preferences and purchase history securely in the cloud. This data ensures that your progress and coins are available even if you switch devices.</p>
+            </section>
+
+            <section id="auth">
+                <h2>6. Authentication</h2>
+                <p>We use Firebase Authentication to secure your account. Whether you sign in via Email or Google Sign-In, your credentials are encrypted and handled directly by Google's secure servers.</p>
+            </section>
+
+            <section id="security">
+                <h2>7. Data Security</h2>
+                <p>The security of your data is important to us. We use industry-standard encryption and Firebase Security Rules to prevent unauthorized access to your information. However, please remember that no method of transmission over the internet is 100% secure.</p>
+            </section>
+
+            <section id="children">
+                <h2>8. Children's Privacy</h2>
+                <p>Our app does not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us.</p>
+            </section>
+
+            <section id="third-party">
+                <h2>9. Third-Party Services</h2>
+                <p>We use Google Play Services for in-app purchases. These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+            </section>
+
+            <section id="changes">
+                <h2>10. Changes to This Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+            </section>
+
+            <section id="contact">
+                <h2>11. Contact Us</h2>
+                <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us:</p>
+                <div class="contact-box">
+                    <strong>Email:</strong> supportdequex@gmail.com
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>Last Updated: August 2026</p>
+            <p>&copy; 2026 Offline Story Life. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Scroll Progress Bar Logic
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
