@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delete Account - Offline Story Life</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #673ab7;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --accent-color: #512da8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: var(--primary-color);
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .delete-button {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            background: var(--primary-color);
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .delete-button:hover {
+            background: var(--accent-color);
+        }
+
+        .warning {
+            background: #fff8e1;
+            border-left: 4px solid #ffb300;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            color: #555;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 1.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 1.5rem;
+            }
+
+            header h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Delete Account</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Delete Your Offline Story Life Account</h2>
+
+            <p>
+                If you would like to delete your Offline Story Life account
+                and associated personal data, please submit the form below.
+            </p>
+
+            <div class="warning">
+                <strong>Important:</strong>
+                Account deletion may permanently remove your account information,
+                profile information, app usage data, story progress, and other
+                data associated with your account.
+            </div>
+
+            <form
+                action="mailto:supportdequex@gmail.com"
+                method="post"
+                enctype="text/plain"
+            >
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Account Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="Account Email"
+                        placeholder="Enter the email used in the app"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="reason">
+                        Reason for Deletion (Optional)
+                    </label>
+
+                    <textarea
+                        id="reason"
+                        name="Reason"
+                        placeholder="Tell us why you want to delete your account"
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="delete-button"
+                >
+                    Request Account Deletion
+                </button>
+
+            </form>
+
+
+            <a href="index.html" class="back-link">
+                ← Back to Privacy Policy
+            </a>
+
+        </div>
+
+
+        <footer>
+
+            <p>
+                &copy; 2026 Offline Story Life. All rights reserved.
+            </p>
+
+            <p>
+                Contact:
+                supportdequex@gmail.com
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
