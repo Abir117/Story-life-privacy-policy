@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Privacy Policy - Offline Story Life</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -29,6 +31,7 @@
             scroll-behavior: smooth;
         }
 
+        /* Header */
         header {
             position: sticky;
             top: 0;
@@ -45,12 +48,14 @@
             font-weight: 700;
         }
 
+        /* Main Container */
         .container {
             max-width: 800px;
             margin: 2rem auto;
             padding: 0 1.5rem;
         }
 
+        /* Card */
         .policy-card {
             background: var(--card-bg);
             padding: 2.5rem;
@@ -58,6 +63,7 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
 
+        /* Sections */
         section {
             margin-bottom: 2rem;
             border-bottom: 1px solid #eee;
@@ -68,6 +74,7 @@
             border-bottom: none;
         }
 
+        /* Headings */
         h2 {
             color: var(--primary-color);
             margin-bottom: 1rem;
@@ -86,12 +93,14 @@
             border-radius: 2px;
         }
 
+        /* Text */
         p {
             margin-bottom: 1rem;
             font-size: 1rem;
             color: #555;
         }
 
+        /* Lists */
         ul {
             margin-left: 1.5rem;
             margin-bottom: 1rem;
@@ -102,6 +111,7 @@
             margin-bottom: 0.5rem;
         }
 
+        /* Contact Box */
         .contact-box {
             background: #f0ebff;
             padding: 1rem;
@@ -110,7 +120,7 @@
             word-break: break-all;
         }
 
-        /* Delete Account Box */
+        /* Delete Account Section */
         .delete-box {
             background: #f8f5ff;
             border: 1px solid #ddd0f5;
@@ -119,64 +129,22 @@
             margin-top: 1rem;
         }
 
-        .delete-form {
-            margin-top: 1.2rem;
-        }
-
-        .delete-form label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: #444;
-        }
-
-        .delete-form input,
-        .delete-form textarea {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-            outline: none;
-        }
-
-        .delete-form input:focus,
-        .delete-form textarea:focus {
-            border-color: var(--primary-color);
-        }
-
-        .delete-form textarea {
-            min-height: 100px;
-            resize: vertical;
-        }
-
-        .delete-button {
-            width: 100%;
-            padding: 13px;
-            border: none;
-            border-radius: 8px;
+        .delete-account-button {
+            display: inline-block;
             background: var(--primary-color);
             color: white;
-            font-size: 1rem;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
             font-weight: 600;
-            cursor: pointer;
+            transition: background 0.2s ease;
         }
 
-        .delete-button:hover {
+        .delete-account-button:hover {
             background: var(--accent-color);
         }
 
-        .warning {
-            background: #fff8e1;
-            border-left: 4px solid #ffb300;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-top: 1rem;
-            color: #555;
-        }
-
+        /* Footer */
         footer {
             text-align: center;
             padding: 2rem 0;
@@ -184,6 +152,7 @@
             font-size: 0.9rem;
         }
 
+        /* Progress Bar */
         .progress-bar {
             position: fixed;
             top: 0;
@@ -195,7 +164,9 @@
             transition: width 0.1s;
         }
 
+        /* Mobile */
         @media (max-width: 600px) {
+
             .policy-card {
                 padding: 1.5rem;
             }
@@ -203,46 +174,62 @@
             header h1 {
                 font-size: 1.2rem;
             }
+
         }
     </style>
 </head>
 
 <body>
 
+    <!-- Scroll Progress Bar -->
     <div class="progress-bar" id="progressBar"></div>
 
+
+    <!-- Header -->
     <header>
         <h1>Privacy Policy</h1>
     </header>
 
+
+    <!-- Main Content -->
     <div class="container">
 
         <div class="policy-card">
 
+
+            <!-- 1. Introduction -->
             <section id="introduction">
+
                 <h2>1. Introduction</h2>
 
                 <p>
-                    Welcome to <strong>Offline Story Life</strong>. We value your privacy and are committed
-                    to protecting your personal data. This Privacy Policy explains how we collect, use,
-                    and safeguard your information when you use our Android application.
+                    Welcome to <strong>Offline Story Life</strong>.
+                    We value your privacy and are committed to protecting
+                    your personal data. This Privacy Policy explains how
+                    we collect, use, and safeguard your information when
+                    you use our Android application.
                 </p>
 
                 <p>
-                    By using the app, you agree to the collection and use of information in accordance
-                    with this policy.
+                    By using the app, you agree to the collection and use
+                    of information in accordance with this policy.
                 </p>
+
             </section>
 
 
+            <!-- 2. Information We Collect -->
             <section id="collect">
+
                 <h2>2. Information We Collect</h2>
 
                 <p>
-                    To provide a functional and personalized experience, we may collect:
+                    To provide a functional and personalized experience,
+                    we may collect:
                 </p>
 
                 <ul>
+
                     <li>
                         <strong>Account Information:</strong>
                         Name and email address used during registration.
@@ -255,14 +242,18 @@
 
                     <li>
                         <strong>Usage Data:</strong>
-                        Information on how you interact with the app, including stories read
-                        and coin transactions.
+                        Information on how you interact with the app,
+                        including stories read and coin transactions.
                     </li>
+
                 </ul>
+
             </section>
 
 
+            <!-- 3. How We Use Information -->
             <section id="use">
+
                 <h2>3. How We Use Information</h2>
 
                 <p>
@@ -270,13 +261,15 @@
                 </p>
 
                 <ul>
+
                     <li>
                         To provide and maintain app features
                         (Story reading, account management).
                     </li>
 
                     <li>
-                        To manage your virtual coin balance and purchase history.
+                        To manage your virtual coin balance and
+                        purchase history.
                     </li>
 
                     <li>
@@ -284,189 +277,198 @@
                     </li>
 
                     <li>
-                        <strong>We do not sell your personal information to third parties.</strong>
+                        <strong>
+                            We do not sell your personal information
+                            to third parties.
+                        </strong>
                     </li>
+
                 </ul>
+
             </section>
 
 
+            <!-- 4. Firebase -->
             <section id="firebase">
+
                 <h2>4. Firebase Services</h2>
 
                 <p>
-                    Our app is built using Flutter and utilizes Google Firebase to provide core
-                    infrastructure. Firebase may collect metadata necessary for its operation,
+                    Our app is built using Flutter and utilizes Google
+                    Firebase to provide core infrastructure. Firebase
+                    may collect metadata necessary for its operation,
                     such as device identifiers and crash reports.
                 </p>
+
             </section>
 
 
+            <!-- 5. Firestore -->
             <section id="firestore">
+
                 <h2>5. Firestore Database</h2>
 
                 <p>
-                    We use Google Cloud Firestore to store your account preferences and purchase
-                    history securely in the cloud. This data ensures that your progress and coins
-                    are available even if you switch devices.
+                    We use Google Cloud Firestore to store your account
+                    preferences and purchase history securely in the cloud.
+                    This data ensures that your progress and coins are
+                    available even if you switch devices.
                 </p>
+
             </section>
 
 
+            <!-- 6. Authentication -->
             <section id="auth">
+
                 <h2>6. Authentication</h2>
 
                 <p>
-                    We use Firebase Authentication to secure your account. Whether you sign in
-                    via Email or Google Sign-In, your credentials are encrypted and handled
-                    directly by Google's secure servers.
+                    We use Firebase Authentication to secure your account.
+                    Whether you sign in via Email or Google Sign-In,
+                    your credentials are encrypted and handled directly
+                    by Google's secure servers.
                 </p>
+
             </section>
 
 
+            <!-- 7. Security -->
             <section id="security">
+
                 <h2>7. Data Security</h2>
 
                 <p>
-                    The security of your data is important to us. We use industry-standard
-                    encryption and Firebase Security Rules to prevent unauthorized access to
-                    your information. However, please remember that no method of transmission
-                    over the internet is 100% secure.
+                    The security of your data is important to us.
+                    We use industry-standard encryption and Firebase
+                    Security Rules to prevent unauthorized access to
+                    your information. However, please remember that no
+                    method of transmission over the internet is 100% secure.
                 </p>
+
             </section>
 
 
+            <!-- 8. Children's Privacy -->
             <section id="children">
+
                 <h2>8. Children's Privacy</h2>
 
                 <p>
-                    Our app does not knowingly collect personally identifiable information
-                    from children under 13. If you are a parent or guardian and you are aware
-                    that your child has provided us with personal data, please contact us.
+                    Our app does not knowingly collect personally
+                    identifiable information from children under 13.
+                    If you are a parent or guardian and you are aware
+                    that your child has provided us with personal data,
+                    please contact us.
                 </p>
+
             </section>
 
 
+            <!-- 9. Third Party -->
             <section id="third-party">
+
                 <h2>9. Third-Party Services</h2>
 
                 <p>
-                    We use Google Play Services for in-app purchases. These third parties have
-                    access to your Personal Data only to perform these tasks on our behalf and
-                    are obligated not to disclose or use it for any other purpose.
+                    We use Google Play Services for in-app purchases.
+                    These third parties have access to your Personal Data
+                    only to perform these tasks on our behalf and are
+                    obligated not to disclose or use it for any other purpose.
                 </p>
+
             </section>
 
 
+            <!-- 10. Delete Account -->
             <section id="delete-account">
 
-                <h2>10. Delete Account &amp; Personal Data</h2>
-
-                <p>
-                    Users can request deletion of their Offline Story Life account and associated
-                    personal data by submitting the account deletion request below.
-                </p>
+                <h2>10. Delete Account</h2>
 
                 <div class="delete-box">
 
                     <p>
-                        Please enter the email address associated with your Offline Story Life
-                        account. We will use this information to identify your account and
-                        process your deletion request.
+                        If you would like to delete your
+                        <strong>Offline Story Life</strong> account
+                        and associated personal data, you can submit
+                        an account deletion request.
                     </p>
 
-                    <form class="delete-form"
-                          action="mailto:supportdequex@gmail.com"
-                          method="post"
-                          enctype="text/plain">
-
-                        <label for="email">
-                            Account Email Address
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="Account Email"
-                            placeholder="Enter your account email"
-                            required
-                        >
-
-                        <label for="reason">
-                            Reason for Deletion (Optional)
-                        </label>
-
-                        <textarea
-                            id="reason"
-                            name="Reason"
-                            placeholder="Optional"
-                        ></textarea>
-
-                        <button type="submit" class="delete-button">
-                            Request Account Deletion
-                        </button>
-
-                    </form>
-
-                    <div class="warning">
-                        <strong>Important:</strong>
-                        Account deletion may permanently remove your account information,
-                        profile information, app usage data, and other data associated with
-                        your account. Some information may be retained where required by
-                        law or for legitimate business purposes.
-                    </div>
-
-                    <p style="margin-top: 1rem;">
-                        If the form does not open your email application, you can send your
-                        deletion request directly to:
+                    <p>
+                        Click the button below to visit our account
+                        deletion page.
                     </p>
 
-                    <div class="contact-box">
-                        <strong>Email:</strong> supportdequex@gmail.com
-                    </div>
+                    <a
+                        href="delete-account.html"
+                        class="delete-account-button"
+                    >
+                        Delete Account
+                    </a>
 
                 </div>
 
             </section>
 
 
+            <!-- 11. Changes -->
             <section id="changes">
+
                 <h2>11. Changes to This Policy</h2>
 
                 <p>
-                    We may update our Privacy Policy from time to time. We will notify you
-                    of any changes by posting the new Privacy Policy on this page and updating
-                    the "Last Updated" date.
+                    We may update our Privacy Policy from time to time.
+                    We will notify you of any changes by posting the new
+                    Privacy Policy on this page and updating the
+                    "Last Updated" date.
                 </p>
+
             </section>
 
 
+            <!-- 12. Contact -->
             <section id="contact">
+
                 <h2>12. Contact Us</h2>
 
                 <p>
-                    If you have any questions or suggestions about our Privacy Policy,
-                    do not hesitate to contact us:
+                    If you have any questions or suggestions about
+                    our Privacy Policy, do not hesitate to contact us:
                 </p>
 
                 <div class="contact-box">
-                    <strong>Email:</strong> supportdequex@gmail.com
+
+                    <strong>Email:</strong>
+                    supportdequex@gmail.com
+
                 </div>
 
             </section>
+
 
         </div>
 
 
+        <!-- Footer -->
         <footer>
-            <p>Last Updated: August 2026</p>
-            <p>&copy; 2026 Offline Story Life. All rights reserved.</p>
+
+            <p>
+                Last Updated: August 2026
+            </p>
+
+            <p>
+                &copy; 2026 Offline Story Life.
+                All rights reserved.
+            </p>
+
         </footer>
 
     </div>
 
 
+    <!-- Scroll Progress Script -->
     <script>
-        // Scroll Progress Bar Logic
+
         window.onscroll = function() {
 
             var winScroll =
@@ -482,7 +484,9 @@
 
             document.getElementById("progressBar").style.width =
                 scrolled + "%";
+
         };
+
     </script>
 
 </body>
