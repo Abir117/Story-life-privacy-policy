@@ -68,6 +68,15 @@
             color: #555;
         }
 
+        .warning {
+            background: #fff8e1;
+            border-left: 4px solid #ffb300;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            color: #555;
+        }
+
         .form-group {
             margin-bottom: 1.2rem;
         }
@@ -116,15 +125,6 @@
             background: var(--accent-color);
         }
 
-        .warning {
-            background: #fff8e1;
-            border-left: 4px solid #ffb300;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            color: #555;
-        }
-
         .back-link {
             display: inline-block;
             margin-top: 1.5rem;
@@ -135,6 +135,14 @@
 
         .back-link:hover {
             text-decoration: underline;
+        }
+
+        .contact-box {
+            margin-top: 1.5rem;
+            background: #f0ebff;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
         }
 
         footer {
@@ -158,97 +166,124 @@
 
 <body>
 
-    <header>
-        <h1>Delete Account</h1>
-    </header>
+<header>
+    <h1>Delete Account</h1>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <div class="card">
+    <div class="card">
 
-            <h2>Delete Your Offline Story Life Account</h2>
+        <h2>Delete Your Offline Story Life Account</h2>
 
-            <p>
-                If you would like to delete your Offline Story Life account
-                and associated personal data, please submit the form below.
-            </p>
+        <p>
+            If you would like to delete your
+            <strong>Offline Story Life</strong> account and associated
+            personal data, please submit the form below.
+        </p>
 
-            <div class="warning">
-                <strong>Important:</strong>
-                Account deletion may permanently remove your account information,
-                profile information, app usage data, story progress, and other
-                data associated with your account.
-            </div>
-
-            <form
-                action="mailto:supportdequex@gmail.com"
-                method="post"
-                enctype="text/plain"
-            >
-
-                <div class="form-group">
-
-                    <label for="email">
-                        Account Email Address
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="Account Email"
-                        placeholder="Enter the email used in the app"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="reason">
-                        Reason for Deletion (Optional)
-                    </label>
-
-                    <textarea
-                        id="reason"
-                        name="Reason"
-                        placeholder="Tell us why you want to delete your account"
-                    ></textarea>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="delete-button"
-                >
-                    Request Account Deletion
-                </button>
-
-            </form>
-
-
-            <a href="index.html" class="back-link">
-                ← Back to Privacy Policy
-            </a>
-
+        <div class="warning">
+            <strong>Important:</strong>
+            Account deletion may permanently remove your account information,
+            profile information, app usage data, story progress, and other
+            data associated with your account.
         </div>
 
+        <!-- Web3Forms -->
+        <form action="https://api.web3forms.com/submit" method="POST">
 
-        <footer>
+            <!-- Your Web3Forms Access Key -->
+            <input
+                type="hidden"
+                name="access_key"
+                value="6879d400-7a24-4de1-9bcb-1ebfc2245068"
+            >
 
-            <p>
-                &copy; 2026 Offline Story Life. All rights reserved.
-            </p>
+            <!-- Email subject -->
+            <input
+                type="hidden"
+                name="subject"
+                value="Offline Story Life - Account Deletion Request"
+            >
 
-            <p>
-                Contact:
-                supportdequex@gmail.com
-            </p>
+            <!-- Sender name -->
+            <input
+                type="hidden"
+                name="from_name"
+                value="Offline Story Life"
+            >
 
-        </footer>
+            <!-- Success page -->
+            <input
+                type="hidden"
+                name="redirect"
+                value="https://abir117.github.io/Story-life-privacy-policy/delete-success.html"
+            >
+
+            <!-- Spam protection -->
+            <input
+                type="checkbox"
+                name="botcheck"
+                style="display:none;"
+            >
+
+            <div class="form-group">
+
+                <label for="email">
+                    Account Email Address *
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="account_email"
+                    placeholder="Enter the email used in the app"
+                    required
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="reason">
+                    Reason for Deletion (Optional)
+                </label>
+
+                <textarea
+                    id="reason"
+                    name="reason"
+                    placeholder="Tell us why you want to delete your account"
+                ></textarea>
+
+            </div>
+
+            <button
+                type="submit"
+                class="delete-button"
+            >
+                Request Account Deletion
+            </button>
+
+        </form>
+
+        <div class="contact-box">
+            <strong>Support Email:</strong><br>
+            dequexsupport15@gmail.com
+        </div>
+
+        <a href="index.html" class="back-link">
+            ← Back to Privacy Policy
+        </a>
 
     </div>
+
+    <footer>
+        <p>
+            &copy; 2026 Offline Story Life. All rights reserved.
+        </p>
+    </footer>
+
+</div>
 
 </body>
 </html>
